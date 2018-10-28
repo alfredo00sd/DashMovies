@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron">
+    <h1 class="h1">Dash Movies&reg;</h1>
+    <br />
+    <p class="lead">
+        El sitio ideal donde puedes encontrar tus peliculas favoritas y hablar sobre ellas en tus redes sociales,
+        ver una descripcion completa y realizar una agil busqueda de lo que quieres ver.
+
+        para un mayor acceso y mejor experiencia te recomendamos logearte en el sitio, es muy facil eh incluso lo puedes hacer con tu red social preferida.
+        @Html.ActionLink("logear", "Login", "Account", null, new { @class = "btn btn-primary" })
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Random Movies &real;</h2>
+        <div class="carousel">
+            <img src="~/Images/LogoBig.bmp" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h2>Estrenos &real;</h2>
+    </div>
+    <div class="col-md-4">
+        <h2>Populares entre los usuarios &real;</h2>
+    </div>
+</div>

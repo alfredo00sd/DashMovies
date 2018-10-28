@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+
+<div class="jumbotron">
+    <div class="text-center">
+        <img class="img-thumbnail" src="~/Images/profile.jpg" width="200" height="170" />
+
+        <h3>Hello Guys I'm Alfred and a hope that your are enjoyin our application</h3>
+
+        <address class="glyphicon-align-center">
+            Santo Domingo, Dominican Republic<br />
+            <br />
+            <abbr class="glyphicon-phone">Phone Number:</abbr>(809) 877-8570
+        </address>
+        <address>
+            <strong>Support:</strong>   <a href="mailto:alfredoz28mm@gmail.com">Support@DashMovies.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:alfredoz28mm@gmail.com">Marketing@DashMovies.com</a>
+        </address>
+    </div>
+</div>
+@Html.ActionLink("About Dash-Movies", "index", "Home", null, new { @class = "btn btn-primary" })

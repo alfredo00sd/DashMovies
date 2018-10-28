@@ -1,0 +1,19 @@
+﻿@model Dash_Movies.Models.Movie
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles de la Pelicula:@Model.Name </h2>
+
+<p>
+    @Html.ActionLink("Volver", "Index", "Movies", null, new { @class = "btn btn-primary" })
+</p>
+
+<ul>
+    <li>Genero: @Model.Genre.Name</li>
+    <li>Estrenada en: @Model.ReleaseDate.ToLongDateString()</li>
+    <li>Fue añadida el: @Model.DateAdded.ToLongDateString()</li>
+    <li>Copias Disponiles: @Model.NumberAvailable</li>
+    <li>Descripcion: @Model.Description</li>
+</ul>
